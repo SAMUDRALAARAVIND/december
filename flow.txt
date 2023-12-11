@@ -9,3 +9,7 @@
 What we will learn in F2 ?
 1. Core javascript.
 2. DOM
+
+F2 => core javascript 
+F3 => extension of js
+F4 => react

@@ -197,5 +197,10 @@ let arr = [4, 11, 99];
 // console.log(Number(x));
 
 function f(a, b = 100) {
-    console.log(a, b);
+    // a = 3, b = 4
+    console.log(a, b); // 3 , 100
 }
+
+
+f(3, 4);
+f(3, undefined); 
