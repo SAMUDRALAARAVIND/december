@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <img src="https://google.com/images/abc.png" alt="Some google image" />
+      <input type="number" name="username" placeholder="Username" required />
+      <a href="https://google.com">Google Home page</a>
+    </div>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./dom.js"></script>
+  </body>
+</html>
+
+<!-- 
+    {
+        tagName: "html",
+        lang: "en",
+        isSelfClosing: false,
+        children: [
+            {
+                tagName: "head",
+                isSelfClosing: false,
+                children: [{}, {}, {}]
+            },
+            {
+                tagName: "body",
+                isSelfClosing: false,
+                children: [
+                    {
+                        tagName: "div",
+                        id: "container",
+                        children: [
+                            {},
+                            {
+                                tagName: "input",
+                                type: "number",
+                                isSelfClosing: true,
+                                name: "username",
+                                placeholder: "Username",
+                                required: true
+                            },
+                            {}
+                        ]
+                    },
+                    {}
+                ]
+            }
+        ]
+    }
+
+
+    Hierarchy of HTML elements represented as JS objects => DOM tree
+
+ -->
