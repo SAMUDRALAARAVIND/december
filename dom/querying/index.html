@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Querying</title>
+    <style>
+      div > p ~ b {
+        color: red;
+      }
+      /* + will select immediate next sibling
+         ~ will select all the next siblings
+      */
+    </style>
+  </head>
+  <body>
+    <!-- <div id="container">
+      <b class="one two">Vipul Kumar</b>
+      <p id="myName" class="two">Aravind</p>
+      <input type="text" name="username" id="uname" value="Rahul" />
+    </div>
+    <b>One more bold</b> -->
+
+    <input type="text" name="username" id="uname" />
+
+    <div>
+      <p id="para1">Para 1</p>
+      <b>Bold text</b>
+      <span id="para2">Para 2</span>
+      <b>Bold text 2</b>
+    </div>
+    <p id="para3">Para 3</p>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
