@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event bubbling and Capturing</title>
+    <style>
+      .item {
+        display: flex;
+        width: 100px;
+        border-radius: 4px;
+        border: 1px solid #e7e7e7;
+      }
+      .item > span {
+        flex-grow: 1;
+        padding: 10px;
+      }
+      .item > .btn {
+        cursor: pointer;
+        background-color: gray;
+      }
+
+      #parent {
+        width: 300px;
+        padding: 50px;
+        background-color: orange;
+      }
+      #child {
+        padding: 50px;
+        background-color: tomato;
+      }
+      #btn {
+        padding: 50px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button id="btn">Click Me</button> -->
+
+    <!-- <div class="item">
+      <span class="btn" id="dec">-</span>
+      <span id="count">1</span>
+      <span class="btn" id="inc">+</span>
+    </div> -->
+
+    <div id="parent">
+      <div id="child">
+        <div id="btn"></div>
+      </div>
+    </div>
+
+    <script src="./event-bubble-capture.js"></script>
+  </body>
+</html>
