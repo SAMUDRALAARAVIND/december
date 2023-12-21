@@ -1,0 +1,66 @@
+@import "../../Roboto-Regular.ttf";
+
+@font-face {
+    font-family: customFont ;
+    src: url(../../Roboto-Regular.ttf);
+}
+* {
+    font-family: customFont;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-end;
+}
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.table td, .table th {
+    border: 1px solid gray;
+    padding: 0 10px;
+    text-align: center;
+}
+.table td {
+    font-size: 0.8rem;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.659);
+    padding: 10px;
+    /* display: flex; as inline is more prior not necessary here... */
+    justify-content: center;
+    align-items: center;
+}
+.popup > .popup-body {
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    position: relative;
+}
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+td:last-child > button {
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 4px 0;
+    background-color: transparent;
+}
