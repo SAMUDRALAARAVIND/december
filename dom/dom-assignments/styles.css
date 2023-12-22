@@ -1,0 +1,47 @@
+.container {
+    width: 300px;
+    position: relative;
+    margin: 20px;
+}
+.options {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+video {
+    width: 100%;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    height: 5px;
+    background-color: white;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 2.5px;
+    display: flex;
+}
+.active-bar{
+    height: 100%;
+    width: 0%;
+    border-radius: 2.5px;
+    background-color: blue;
+}
+
+.bubble {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    /* position: relative; */
+    right: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: blue;
+}
+
+.bubble:hover{
+    transform: scale(2);
+}
