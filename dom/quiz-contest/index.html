@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Contest</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Quiz App</h1>
+      <p id="username">Login</p>
+    </div>
+
+    <div class="home">
+      <button onclick="toggleModal()">Start Solving</button>
+    </div>
+
+    <div class="popup" style="display: none">
+      <div class="popup-body">
+        <button onclick="toggleModal()">close</button>
+        <h2>Choose category</h2>
+        <p>Select more than 5 topics to start quiz</p>
+        <form class="categories">
+          <div class="chips"></div>
+
+          <button>Start Quiz</button>
+        </form>
+      </div>
+    </div>
+
+    <form id="question-section" style="display: none">
+      <p id="question-title">Who wrote 'To Kill a Mockingbird'?</p>
+      <div class="options" id="options">
+        <div class="option">
+          <input type="radio" name="option" id="A" />
+          <label for="A">Figma</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" name="option" id="B" />
+          <label for="B">Invision</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" name="option" id="C" />
+          <label for="C">Adobe</label>
+        </div>
+
+        <div class="option">
+          <input type="radio" name="option" id="D" />
+          <label for="D">Sketch</label>
+        </div>
+      </div>
+      <button type="button" onclick="previous()">Previous</button>
+      <button type="button" onclick="next()">Next</button>
+    </form>
+
+    <script src="./question.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
