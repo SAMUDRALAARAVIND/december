@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google sheet clone</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="head">
+      <form>
+        <select name="fontFamily">
+          <option value="one">One</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
+        </select>
+
+        <input type="number" name="fontSize" />
+
+        <div>
+          <input type="checkbox" name="bold" id="bold" />
+          <label for="bold" class="material-icons">format_bold</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="italic" id="italic" />
+          <label for="italic" class="material-icons">format_italic</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="underline" id="underline" />
+          <label for="underline" class="material-icons">format_underline</label>
+        </div>
+
+        <div>
+          <input type="radio" name="align" id="align-left" checked />
+          <label for="align-left" class="material-icons"
+            >format_align_left</label
+          >
+        </div>
+        <div>
+          <input type="radio" name="align" id="align-right" />
+          <label for="align-right" class="material-icons"
+            >format_align_right</label
+          >
+        </div>
+        <div>
+          <input type="radio" name="align" id="center" />
+          <label for="center" class="material-icons">format_align_center</label>
+        </div>
+
+        <div>
+          <input type="color" name="textColor" id="text-color" />
+          <label for="text-color" class="material-icons"
+            >format_color_text</label
+          >
+        </div>
+
+        <div>
+          <input type="color" name="bgColor" id="bg-color" />
+          <label for="bg-color" class="material-icons">format_color_fill</label>
+        </div>
+      </form>
+      <div class="row2">
+        <div class="selected-cell">D1</div>
+        <label for="fx">f(x)</label>
+        <input type="text" name="fx" id="fx" />
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="header"></div>
+      <div class="body">
+        <div class="sno-container"></div>
+        <div class="rows-container"></div>
+      </div>
+    </section>
+
+    <section class="foot"></section>
+
+    <div class="test" contenteditable="true"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

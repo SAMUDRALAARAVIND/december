@@ -1,0 +1,108 @@
+@font-face {
+    font-family: poppins;
+    src: url(../poppins.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+input[type="color"] {
+    width: .1px;
+    height: .1px;
+    visibility: hidden;
+}
+
+input + label {
+    padding: 4px; 
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input:checked + label { 
+    background-color: #D3E2FD;
+}
+
+.row2 {
+    display: flex;
+    max-width: 60vw;
+    margin: 20px auto ;
+}
+.row2 input { 
+    flex-grow: 1;
+}
+.row2 .selected-cell {
+    width: 100px;
+    text-align: center;
+}
+
+.header { 
+    display: flex;
+}
+.header .cell {
+ min-width: 150px;
+ text-align: center;
+ padding: 5px 2px;
+ border: 0.5px solid #C4C7C5;
+ font-size: 0.8rem;
+}
+
+.body { 
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+.container {
+    height: 80vh;
+    overflow: scroll;
+}
+.sno-container .sno{
+    border: 0.5px solid #C4C7C5;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rows-container{ 
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+}
+.row .cell {
+    border: 0.5px solid #C4C7C5;
+    min-width: 150px;
+    min-height: 1.5rem;
+}
+
+.header .first-cell{
+    min-width: 50px;
+    border: 0.5px solid #C4C7C5;
+}
+
+
+/* .test  {
+    width: 200px;
+    height: 32px;
+    border: 2px solid blue;
+    display: inline-block;
+    overflow: hidden;
+} */
+
+.row .cell:focus {
+    outline: 2px solid #1B72E8;
+    height: auto;
+}
