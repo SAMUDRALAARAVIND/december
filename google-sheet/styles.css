@@ -46,9 +46,13 @@ input:checked + label {
     width: 100px;
     text-align: center;
 }
-
 .header { 
     display: flex;
+    width: fit-content;
+    position: sticky;
+    top: 0;
+    background-color: #D3E1FD;
+    z-index: 100;
 }
 .header .cell {
  min-width: 150px;
@@ -59,13 +63,18 @@ input:checked + label {
 }
 
 .body { 
-    /* border: 2px solid red; */
+    width: fit-content;
     display: grid;
     grid-template-columns: 50px auto;
 }
 .container {
     height: 80vh;
     overflow: scroll;
+}
+.sno-container {    
+    background-color: #D3E1FC;
+    position: sticky;
+    left: 0;
 }
 .sno-container .sno{
     border: 0.5px solid #C4C7C5;

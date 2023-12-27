@@ -26,6 +26,8 @@ function createRow(rowNumber) {
         const cell = document.createElement("div");
         cell.className = "cell";
         cell.contentEditable = true;
+        cell.id = `${String.fromCharCode(64 + i)}${rowNumber}`;
+        cell.addEventListener("focus", onCellFocus);
         row.appendChild(cell);
     }
     return row;

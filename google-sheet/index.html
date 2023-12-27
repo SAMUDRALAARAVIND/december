@@ -19,7 +19,7 @@
           <option value="three">Three</option>
         </select>
 
-        <input type="number" name="fontSize" />
+        <input type="number" name="fontSize" value="14" min="10" max="24" />
 
         <div>
           <input type="checkbox" name="bold" id="bold" />
@@ -37,19 +37,25 @@
         </div>
 
         <div>
-          <input type="radio" name="align" id="align-left" checked />
+          <input
+            type="radio"
+            name="align"
+            id="align-left"
+            checked
+            value="left"
+          />
           <label for="align-left" class="material-icons"
             >format_align_left</label
           >
         </div>
         <div>
-          <input type="radio" name="align" id="align-right" />
+          <input type="radio" name="align" id="align-right" value="right" />
           <label for="align-right" class="material-icons"
             >format_align_right</label
           >
         </div>
         <div>
-          <input type="radio" name="align" id="center" />
+          <input type="radio" name="align" id="center" value="center" />
           <label for="center" class="material-icons">format_align_center</label>
         </div>
 
@@ -61,12 +67,12 @@
         </div>
 
         <div>
-          <input type="color" name="bgColor" id="bg-color" />
+          <input type="color" value="#ffffff" name="bgColor" id="bg-color" />
           <label for="bg-color" class="material-icons">format_color_fill</label>
         </div>
       </form>
       <div class="row2">
-        <div class="selected-cell">D1</div>
+        <div class="selected-cell">NA</div>
         <label for="fx">f(x)</label>
         <input type="text" name="fx" id="fx" />
       </div>
@@ -84,6 +90,7 @@
 
     <div class="test" contenteditable="true"></div>
 
+    <script src="./data-flow.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <video src="rain.mp4" loop></video>
+      <form class="options">
+        <div class="timers">
+          <input required value="2" type="radio" name="time" id="2" />
+          <label for="2">2 Minutes</label>
+
+          <input required value="5" type="radio" name="time" id="5" />
+          <label for="5">5 Minutes</label>
+
+          <input required value="10" type="radio" name="time" id="10" />
+          <label for="10">10 Minutes</label>
+        </div>
+        <div id="player">
+          <button type="button" id="play-pause">Play | Pause</button>
+          <p class="timer-text">10 Min</p>
+        </div>
+        <div class="background-picker">
+          <input required type="radio" value="rain" name="bg" id="rain" />
+          <label for="rain">Rain</label>
+          <input required type="radio" value="beach" name="bg" id="beach" />
+          <label for="beach">Beach</label>
+        </div>
+        <div class="audios">
+          <audio src="./rain.wav" loop></audio>
+        </div>
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
